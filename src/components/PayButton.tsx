@@ -75,7 +75,7 @@ const PayButton: React.FC<PayButtonProps> = ({
     }
 
     const config: PaystackConfig = {
-      key: "pk_test_9b0799ba9ae2384a170c322d4c7f9556cfc09775",
+      key: "pk_live_42c5d658eb74130fff9da35f47649f41aa928cc5",
       email: "okefolahanolamide2006@gmail.com",
       amount: amount * 100,
       currency: "NGN",
@@ -88,7 +88,9 @@ const PayButton: React.FC<PayButtonProps> = ({
           title: "Payment Successful! ☕",
           description: `Thank you ${
             userName || ""
-          } for the ${label} coffee! Your reference: ${response.reference}.\n\nBest regards, Olamide`,
+          } for the ${label} coffee! Your reference: ${
+            response.reference
+          }.\n\nBest regards, Olamide`,
         });
       },
       onClose: () => {
